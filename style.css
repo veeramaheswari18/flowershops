@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;600&family=Kanit:ital,wght@0,100;1,500&family=Roboto+Mono:ital,wght@0,300;0,600;1,300;1,500&family=Roboto:ital,wght@0,400;0,500;0,700;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,500;0,800;0,900;1,800&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-padding-top:3rem;
+   text-decoration: none;
+   scroll-behavior: smooth;
+   list-style: none;
+}
+:root{
+   --main-color:#fa3c7a;
+   --second-color:#1e3932;
+}
+section{
+   padding: 50px 0%;
+}
+*::selection{
+   color: #fff;
+   background-color: var(--main-color);
+}
+.navcontainer{
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   z-index:1000;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color:white;
+   box-shadow: 0 4px 41px rgb(14 55 54/14%);
+   padding:15px 10%;
+   transition:0.2s;
+}
+.logo img{
+   width: 50px;
+}
+.navbar{
+   display: flex;
+   gap: 2rem;
+}
+.navbar li a{
+   text-decoration: none;
+   color: var(--second-color);
+   font-weight: 600;
+   text-transform: capitalize;
+   font-size: 1rem;
+}
+.navbar a:hover{
+   color: var(--main-color);
+}
+#menu{
+   font-size: 24px;
+   cursor: pointer;
+   display: none;
+}
+.herocontainer{
+    width: 100%;
+    min-height: 100vh;
+}
+.slide img{
+    width: 100%;
+    height: 90vh;
+}
+.buttons{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.buttons{
+    position: absolute;
+    padding: 8px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+button{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    background-color: rgb(0,0,0,0.5);
+    color:white;
+}
+.buttons{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.buttons{
+    position: absolute;
+    padding: 8px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+button{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    background-color: rgb(0,0,0,0.5);
+    color:white;
+}
+.slide .imagedate{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.abc{
+    width: fit-content;
+    background-color: black;
+    padding: 0px  20px;
+    text-align: center;
+    border: none;
+    text-transform: capitalize;
+}
+.head{
+    padding: 15px 15px;
+    font-size: 2rem;
+    text-transform: capitalize;
+    
+}
+.text{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    color:#fa3c7a;
+    line-height: 3rem;
+}
+.abc:hover{
+    background-color:#fa3c7a ;
+    border: none;
+}
+
+.heading{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.shopsection{
+    
+        display: flex;
+        flex-wrap: wrap;
+        gap:0.5rem;
+        margin-top: 1rem;
+     
+}
+.shopsection .card1{
+    flex: 1 1 10rem;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius:0.5rem;
+ 
+ }
+ .card1 img{
+    width:350px;
+    height: 350px;
+}
+ .but1{
+    border: 2px solid grey;
+    padding: 1rem 3rem;
+    text-transform: capitalize;
+    background-color: #fa3c7a;
+    border: none;
+    color: black;
+    font-size: 1.3rem;
+ }
+ .but1:hover{
+    background-color: black;
+    color: white;
+ }
+ .card1:hover img{
+    animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  transition: all ease-in-out;
+    
+ }
+ @keyframes shake{
+    100% {transform:translateX(1%)}
+ }
+ .cutomersection{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.8rem;
+    margin-top: 5rem;
+    background-color:rgb(236, 250, 250) ;
+    padding: 30px 20px;
+}
+.cutomersection .customimg{
+    flex: 1 1 10rem;
+    padding: 20px 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 20px 10px;
+ }
+ .customimg img{
+    width: 100px;
+    height: 100px;
+ }
+ .customimg p{
+    margin-top: 2rem;
+ }
+ .productsection{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.5rem;
+    margin-top: 1rem;
+ 
+}
+.productsection .productbox{
+flex: 1 1 6rem;
+padding: 10px;
+display: flex;
+text-align: center;
+flex-direction: column;
+align-items: center;
+margin-top: 3rem;
+border-radius:0.5rem;
+}
+.productbox img{
+     width: 300px;
+     height: 300px;
+}
+.staricon i{
+    color:grey;
+    text-transform: capitalize;
+}
+.staricon i span{
+    font-size: .9rem;
+    text-transform: capitalize;
+}
+.productbox a{
+    text-transform: capitalize;
+    color: black;
+    font-size: 1.3rem;
+}
+.productbox a:hover{
+    color: #fa3c7a;
+}
+.productbox p{
+    color: #fa3c7a;
+    font-weight: 200;
+}
+.springcontainer{
+    background-color:rgb(221, 250, 240);
+    
+}
+.springsection{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.5rem;
+    margin-top: 1rem;
+ 
+}
+.springsection .part{
+flex: 1 1 6rem;
+padding: 10px;
+display: flex;
+text-align: center;
+flex-direction: column;
+align-items: center;
+margin-top: 3rem;
+border-radius:0.5rem;
+}
+.part .partin{
+    margin: 30% 7rem;
+    align-items: center;
+}
+.partin h5{
+    font-size: 1rem;
+    color:black;
+}
+
+.partin h1{
+    font-size: 2rem;
+}
+ .partin p{
+    font-size: 1rem;
+ }
+.partin .but4{
+    border: 2px solid gray;
+    padding: 1rem 3rem;
+    text-transform: capitalize;
+    border: none;
+    color: black;
+    font-size: 1.3rem;
+ }
+.part img{
+    width:400px;
+}
+.containertestie{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .testimonial{
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+ }
+ .textimonialtext{
+    background-color:white;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    box-shadow: 0px 15px 20px rgba(0,0, 0, 0.2);
+ }
+ .usertext{
+    width: 80%;
+    text-align: center;
+    line-height: 14px;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+   
+ }
+ .usertext .fa-solid{
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+ }
+ .usertext span{
+    display: block;
+    font-size: 13px;
+    margin-top: 50px;
+    font-size: 500;
+    text-transform: uppercase;
+ }
+ .textimonialpic{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .userpic{
+    width: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor:pointer;
+ }
+ .usertext.active-text{
+    display: block;
+    animation:moveup 0.5s linear forwards;
+ }
+ .userpic.active-pic{
+    width: 80px;
+    border: 3px solid #ff0058;
+ }
+ @keyframes moveup{
+    0%{
+       margin-top: 25px;
+    }
+    100%{
+       margin-top: 0px;
+    }
+ }
+ .contactscontainer{
+   padding: 30px 5rem;
+
+ }
+.contactsection{
+   display: flex;
+   flex-wrap:wrap;
+   gap: .4em;
+   margin-top:1rem;
+   padding: 10px 1rem;
+}
+.cont img{
+   width: 36%;
+   padding: 10px 1rem;
+}
+.cont p{
+   font-size: 1.5rem;
+   padding: 5px 1rem;
+   font-size: 1rem;
+
+}
+.cont{
+   padding:10px 1rem;
+   margin-top: 1rem;
+   text-transform: capitalize;
+   flex: 1 1 10rem;
+
+}
+.cont h1{
+   font-size: 2rem;
+   padding: 2px 1rem;
+   text-transform: capitalize;
+}
+.cont form{
+   height: 5px;
+   width: 100%;
+   padding: 10px 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 1rem;
+}
+form input{
+   height: 100%;
+   width: 90%;
+   border: 2px solid black;
+   border-radius: 5px;
+   padding: 10px 20px;
+   font-size: 20px;
+   outline: none;
+}
+form i{
+   position: absolute;
+   font-size: 20px;
+   padding:  0 2px;
+   text-align: center;
+}
+form input::placeholder{
+   color: #ff0058;
+}
+.copright h5{
+   text-align: center;
+   font-size: 1.2rem;
+}
+@media(max-width:1150px){
+   header{
+      padding: 18px 7%;
+   }
+   section{
+      padding: 40px 0%;
+   }
+   }
+   @media(max-width:768px){
+      header{
+         padding: 11px 4%;
+      }
+      #menu{
+         display:block;
+      }
+      header .navbar{
+         position:absolute;
+         top:-800px;
+         left: 0;
+         right: 0;
+         display: flex;
+         flex-direction: column;
+         background: #fff;
+         box-shadow: 0 4px 4px rgba(14 55 54 /14%);
+         border-top: 2px solid var(--main-color);
+         transition: 0.2s;
+         text-align: left;
+      }
+      .navbar.active{
+         top: 100%;
+      }
+      .navbar a{
+         padding:0.9rem;
+         display: block;
+         color: var(--second-color);
+      }
+      .navbar li a.cart{
+         display: none;
+      }
+      .navbar li p.cart-basket{
+         display: none;
+      }
+      }
+      .buttons{
+         position: absolute;
+         display: flex;
+         justify-content: space-between;
+         width: 90%;
+     }
+     .buttons{
+         position: absolute;
+         padding: 8px;
+         top: 50%;
+         cursor: pointer;
+         transform: translateY(-50%);
+         z-index: 100;
+     }
+    
+     .buttons{
+         position: absolute;
+         display: flex;
+         justify-content: space-between;
+         width: 100%;
+     }
+     

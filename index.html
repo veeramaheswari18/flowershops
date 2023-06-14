@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----link in css-->
+    <link rel="stylesheet" href="style.css">
+    <!---fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>florial</title>
+</head>
+
+<body>
+    <header>
+        <div class="navcontainer">
+            <a href="#" class="logo"><img src="images/head.png"></a>
+            <i class="fas fa-bars" id="menu"></i>
+            <nav class="navbar">
+                <li><a href="#home">home</a></li>
+                <li><a href="#shop">shop</a></li>
+                <li><a href="#product">product</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#page">page</a></li>
+                <li><a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <p class="cart-basket" id="span"></p>
+                </li>
+            </nav>
+        </div>
+    </header>
+    <section class="herocontainer" id="home">
+        <div class="herosection">
+            <div class="slide">
+                <img src="images/slider-1.png" id="pic" alt="1">
+                <div class="imagedate">
+                    <h2 class="head">stunning flowers,plants & gifts</h2>
+                    <h1 class="text">spring sale</h1>
+                    <br>
+                    <br>
+                    <button class="abc">shop now <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+            <div class="buttons">
+                <button onclick="prev()">❮</button>
+
+                <button onclick="next()">❯</button>
+            </div>
+        </div>
+    </section>
+    <section class="shopcontainer" id="shop">
+        <div class="heading">
+            <h1>shop the most popular</h1>
+        </div>
+        <div class="shopsection">
+            <div class="card1">
+                <img src="images/categories-1.png" alt="">
+                <br>
+                <a href="" class="but1" style="text-decoration: none;">bespoke</a>
+            </div>
+            <div class="card1">
+                <img src="images/categories-2.png" alt="">
+                <br>
+                <a href="" class="but1" style="text-decoration: none;">bright & Bold</a>
+            </div>
+            <div class="card1">
+                <img src="images/categories-3.png" alt="">
+                <br>
+                <a href="" class="but1" style="text-decoration: none;">luxurious</a>
+            </div>
+        </div>
+    </section>
+    <section class="customercontainer">
+        <div class="cutomersection">
+            <div class="customimg">
+                <img src="images/cus1.png" alt="">
+                <p>SAME DAY DELIVERY, CLICK & COLLECT</p>
+            </div>
+            <div class="customimg">
+                <img src="images/cus2.png" alt="">
+                <p>FRESH FLOWERS, LOCAL GROWERS,</p>
+            </div>
+            <div class="customimg">
+                <img src="images/cus3.png" alt="">
+                <p>24/7 FREE SUPPORT</p>
+            </div>
+        </div>
+    </section>
+    <section class="productcontainer" id="product">
+        <div class="heading">
+            <h1>latest products </h1>
+        </div>
+        <div class="productsection">
+            <div class="productbox">
+                <img src="images/card.png" alt="">
+                <br>
+                <div class="staricon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"><span>(O review)</span></i>
+                </div>
+                <br>
+                <a href="#">romatic day</a>
+                <br>
+                <p>$15.00</p>
+            </div>
+            <div class="productbox">
+                <img src="images/card1.png" alt="">
+                <br>
+                <div class="staricon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"><span>(O review)</span></i>
+                </div>
+                <br>
+                <a href="#">forever one love</a>
+                <br>
+                <p>$250.00</p>
+            </div>
+            <div class="productbox">
+                <img src="images/card2.png" alt="">
+                <br>
+                <div class="staricon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"><span>(O review)</span></i>
+                </div>
+                <br>
+                <a href="#">one love</a>
+                <br>
+                <p>$150.00</p>
+            </div>
+            <div class="productbox">
+                <img src="images/card3.png" alt="">
+                <br>
+                <div class="staricon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"><span>(O review)</span></i>
+                </div>
+                <br>
+                <a href="#">winifred</a>
+                <br>
+                <p>$50.00</p>
+            </div>
+        </div>
+        <div class="productsection">
+            <div class="productbox">
+                <img src="images/card4.png" alt="">
+                <br>
+                <div class="staricon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"><span>(O review)</span></i>
+                </div>
+                <br>
+                <a href="#">baby breathes</a>
+                <br>
+                <p>$15.00 - $100.00</p>
+            </div>
+            <div class="productbox">
+                <img src="images/card6.png" alt="">
+                <br>
+                <div class="staricon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"><span>(O review)</span></i>
+                </div>
+                <br>
+                <a href="#">love story</a>
+                <br>
+                <p>$135.00</p>
+            </div>
+            <div class="productbox">
+                <img src="images/card7.png" alt="">
+                <br>
+                <div class="staricon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"><span>(O review)</span></i>
+                </div>
+                <br>
+                <a href="#">elegant flower</a>
+                <br>
+                <p>$50.00</p>
+            </div>
+            <div class="productbox">
+                <img src="images/card6.png" alt="" class="imagore">
+                <br>
+                <div class="staricon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"><span>(O review)</span></i>
+                </div>
+                <br>
+                <a href="#">pretty purple flower</a>
+                <br>
+                <p>$50.00 - $500.00</p>
+            </div>
+        </div>
+    </section>
+<section class="springcontainer">
+    <div class="springsection">
+        <div class="part">
+        <div class="partin">
+           <h5>BETTER THAN CAKE</h5>
+           <br>
+           <h1>SPRING COLLECTIONS</h1>
+           <br>
+           <p>Suspendisse faucibus, nunc et pellentesque egestas, lacus ante</p>
+           <br>
+           <a href="" class="but4" style="text-decoration: none;">explore  <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+        </div>
+        <div class="part">
+            <img src="images/img-1-1.png" alt="">
+        </div>
+    </div>
+</section>
+<section class="testimonial" id="blog">
+    <div class="heading">
+        <h1>client's testiemonial</h1>
+    </div>
+    <div class="containertestie">
+        <div class="testimonial">
+            <div class="textimonialtext">
+                <div class="usertext">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quam distinctio esse quod nisi eaque natus, sapiente, nam vero, incidunt fugiat aliquam cum eligendi libero! Expedita saepe nulla necessitatibus culpa.</p>
+                    <span>ronaldo tax,sr manager</span>
+                </div>
+                <div class="usertext active-text">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quam distinctio esse quod nisi eaque natus, sapiente, nam vero, incidunt fugiat aliquam cum eligendi libero! Expedita saepe nulla necessitatibus culpa.</p>
+                    <span>James dhina,master chef</span>
+                </div>
+                <div class="usertext">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quam distinctio esse quod nisi eaque natus, sapiente, nam vero, incidunt fugiat aliquam cum eligendi libero! Expedita saepe nulla necessitatibus culpa.</p>
+                    <span>alexa china,sr manager</span>
+                </div>
+                <div class="usertext">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quam distinctio esse quod nisi eaque natus, sapiente, nam vero, incidunt fugiat aliquam cum eligendi libero! Expedita saepe nulla necessitatibus culpa.</p>
+                    <span>ronaldo tax,sr manager</span>
+                </div> 
+                <div class="usertext">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quam distinctio esse quod nisi eaque natus, sapiente, nam vero, incidunt fugiat aliquam cum eligendi libero! Expedita saepe nulla necessitatibus culpa.</p>
+                    <span>james dhina, master chef</span>
+                </div>
+            </div>
+            <div class="textimonialpic">
+                <img src="images/tesm-1.png" alt="texti1" class="userpic" onclick="show()">
+                <img src="images/tesm-2.png" alt="texti2"  class="userpic active-pic" onclick="show()">
+                <img src="images/tesm-3.png" alt="texti3"  class="userpic" onclick="show()">
+                <img src="images/tesm-4.png" alt="texti4"  class="userpic" onclick="show()">
+                <img src="images/test-4.png" alt="texti5" class="userpic" onclick="show()">  
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<footer class="contactscontainer" id="page">
+<div class="contactsection">
+    <div class="cont">
+        <img src="images/head.png" alt="">
+        <p>Head Office: 26 Wyle Cop, Shrewsbury,</p>
+        <p>Shropshire, SY1 1XD</p>
+        <p>Tel: 01743 234500</p>
+        <p>Email: support&florial.com</p>
+    </div>
+    <div class="cont">
+        <h1>help</h1>
+        <ul>
+        <p>flower care</p>
+        <p> help center</p>
+        <p>shipping</p>
+        <p>terms of use</p>
+        <p>accessibility</p>
+        <p>privacy policy</p>
+   
+    </ul>
+    </div>
+    <div class="cont">
+        <h1>local</h1>
+        <ul>
+        <p>los angeles</p>
+        
+        <p>san francisco</p>
+        
+        <p>newyark city</p>
+        
+        <p>dallas</p>
+       
+        <p>chicago</p>
+        
+        <p>washington DC</p>
+    </ul>
+    </div>
+    <div class="cont">
+        <h1>our newsletter</h1>
+        <p>Sign up for the latest  offers and exclusives.</p>
+        <form>
+            <input type="email">
+            <i class="fa-solid fa-envelope"></i>
+        </form>
+    </div>
+</div>
+<div class="copright">
+    <h5>Copyright © 2021 Florial Flower</h5>
+</div>
+</footer>
+
+    <!----js script-->
+    <script src="script.js"></script>
+</body>
+
+</html>
